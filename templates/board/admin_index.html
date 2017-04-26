@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin index(board admin)</title>
+</head>
+<body>
+    <form method="POST" action={{ url_for("board.add") }}>
+        <input name="name">
+        <br>
+        <button>add</button>
+    </form>
+
+    <form method="POST" action={{ url_for("board.delete") }}>
+        <input name="name">
+        <br>
+        <button>delete</button>
+    </form>
+</body>
+</html>
